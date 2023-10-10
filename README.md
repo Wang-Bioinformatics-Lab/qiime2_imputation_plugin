@@ -7,14 +7,14 @@ If you have already build this plugin and what to update the plugin, run:
  qiime dev refresh-cache
 ```
 
+
+
+
+Go to the root folder.
 First, install the plugin:
 ```
  pip install -e .
 ```
-
-
-Go to the root folder.
-
 Then you can build the plugin with 
 ```
 python setup.py install
