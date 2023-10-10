@@ -1,12 +1,19 @@
 
 
 ## Build and run
+
 If you have already build this plugin and what to update the plugin, run:
 ```
  qiime dev refresh-cache
 ```
 
-Go to the roo folder.
+First, install the plugin:
+```
+ pip install -e .
+```
+
+
+Go to the root folder.
 
 Then you can build the plugin with 
 ```
@@ -16,7 +23,7 @@ python setup.py install
 To run the plugin and generate an imputation file:
 
 ```
-qiime2_imputation_plugin impulation-function   --i-input-artifact data/test_otu_table.transpose.qza  --o-output-artifact data/output.qza
+qiime imputation-plugin imputation-function --i-input-artifact data/qiime_table.qza --o-output-artifact data/output.qza
 ```
 
 ## Test
