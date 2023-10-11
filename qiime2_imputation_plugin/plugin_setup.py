@@ -34,7 +34,7 @@ plugin.methods.register_function(
     function=imputation_function,
     inputs={'input_artifact': FeatureTable[Frequency]},
     parameters={},  # Add parameters if necessary
-    outputs=[('output_artifact', FeatureTable[RelativeFrequency])],
+    outputs=[('output_artifact', FeatureTable[Frequency])],
     output_descriptions={
         'output_artifact': 'Description of the output artifact.'
     },
